@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request protocol="3.0" version="KeystoneAdmin-0" ismachine="0"
+    requestid="{9D51FED4-FDBF-44B5-8CD7-39BEC835B923}" dedup="cr"
+    sessionid="{9306C88C-F3FE-4331-809D-1F07F79548F5}" installsource="ondemandupdate">
+    <os platform="mac" version="13.2" arch="x86_64h" sp="13.2.1_x86_64h"></os>
+    <app appid="com.google.Chrome" version="109.0.5414.87" cohort="1:1y5:" cohortname="Stable"
+        lang="en-us" installage="1166" ap="universal" brand="GGLG" signed="1">
+        <ping r="-1" rd="-1"></ping>
+        <updatecheck></updatecheck>
+    </app>
+</request>

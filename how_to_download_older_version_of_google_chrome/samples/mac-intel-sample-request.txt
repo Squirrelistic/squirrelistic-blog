@@ -1,0 +1,19 @@
+POST https://tools.google.com/service/update2?cup2hreq=6ed3d9683f1ce5dc1baaa9ae2db40ec6089a0081b5ac2ba9f35a0abddef251b7&cup2key=12:4023619447 HTTP/1.1
+Host: tools.google.com
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+X-Goog-Update-Interactivity: fg
+Accept: */*
+User-Agent: ksfetch (unknown version) CFNetwork/1404.0.5 Darwin/22.3.0
+Accept-Language: en-gb
+Accept-Encoding: gzip, deflate, br
+Content-Length: 605
+
+<?xml version="1.0" encoding="UTF-8"?>
+<request protocol="3.0" version="KeystoneAdmin-0" ismachine="0" requestid="{6AC913C0-AED8-47CB-B6C4-D6EF94E6D045}" dedup="cr" sessionid="{654C63FC-C645-420A-9B10-2773C262FCD3}" installsource="ondemandupdate">
+    <os platform="mac" version="13.2" arch="x86_64h" sp="13.2.1_x86_64h"></os>
+    <app appid="com.google.Chrome" version="109.0.5414.87" cohort="1:1y5/1hd3:" cohortname="M110_Stable_RampUp" lang="en-us" installage="1167" ap="universal" brand="GGLG" signed="1">
+        <ping r="-1" rd="-1"></ping>
+        <updatecheck></updatecheck>
+    </app>
+</request>

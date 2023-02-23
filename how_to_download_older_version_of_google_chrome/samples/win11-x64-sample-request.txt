@@ -1,0 +1,16 @@
+POST https://update.googleapis.com/service/update2?cup2key=11:3502117580&cup2hreq=614b36ac77030a1ed835d65b7d0a4bbdef0ba241b5f1d6bb41c96f347690bc0b HTTP/1.1
+Cache-Control: no-cache
+Connection: Keep-Alive
+Pragma: no-cache
+User-Agent: Google Update/1.3.36.111;winhttp;cup-ecdsa
+X-Goog-Update-AppId: {8A69D345-D564-463C-AFF1-A69D9E530F96}
+X-Goog-Update-Updater: Omaha-1.3.36.111
+X-Goog-Update-Interactivity: fg
+X-Last-HR: 0x0
+X-Last-HTTP-Status-Code: 0
+X-Retry-Count: 0
+X-HTTP-Attempts: 1
+Content-Length: 802
+Host: update.googleapis.com
+
+<?xml version="1.0" encoding="UTF-8"?><request protocol="3.0" updater="Omaha" updaterversion="1.3.36.111" shell_version="1.3.36.111" ismachine="1" sessionid="{F8EE27C3-8B43-43F7-8D57-1375A97E0C6B}" installsource="update3web-ondemand" requestid="{BAC01935-31FB-48AB-AE8A-6267D865194E}" dedup="cr" domainjoined="0"><hw physmemory="4" sse="1" sse2="1" sse3="1" ssse3="1" sse41="1" sse42="1" avx="1"/><os platform="win" version="10.0.22000.1574" sp="" arch="x64"/><app appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" version="97.0.4692.99" nextversion="" ap="x64-stable-statsdef_0" lang="" brand="GCEB" client="" installage="0" iid="{31FDF25B-CC90-55E2-E8A6-6947A311CC60}"><updatecheck/><ping active="1" a="-1" r="-1" ad="-1" rd="-1" ping_freshness="{5F810510-70A5-4C1E-B5CE-6E5E8E9E7965}"/></app></request>

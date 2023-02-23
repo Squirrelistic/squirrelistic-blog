@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response protocol="3.0" server="prod">
+  <daystart elapsed_days="5897" elapsed_seconds="24113" />
+  <app appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" cohort="1:gu/i19:" cohortname="Stable Installs &amp; Version Pins" status="ok">
+    <updatecheck status="ok">
+      <urls>
+        <url codebase="http://edgedl.me.gvt1.com/edgedl/release2/chrome/ach7dbbrq7aqylfkx3wmjrvd3vja_105.0.5195.127/" />
+        <url codebase="http://redirector.gvt1.com/edgedl/release2/chrome/ach7dbbrq7aqylfkx3wmjrvd3vja_105.0.5195.127/" />
+        <url codebase="https://edgedl.me.gvt1.com/edgedl/release2/chrome/ach7dbbrq7aqylfkx3wmjrvd3vja_105.0.5195.127/" />
+        <url codebase="https://redirector.gvt1.com/edgedl/release2/chrome/ach7dbbrq7aqylfkx3wmjrvd3vja_105.0.5195.127/" />
+        <url codebase="http://dl.google.com/release2/chrome/ach7dbbrq7aqylfkx3wmjrvd3vja_105.0.5195.127/" />
+        <url codebase="https://dl.google.com/release2/chrome/ach7dbbrq7aqylfkx3wmjrvd3vja_105.0.5195.127/" />
+        <url codebase="http://www.google.com/dl/release2/chrome/ach7dbbrq7aqylfkx3wmjrvd3vja_105.0.5195.127/" />
+        <url codebase="https://www.google.com/dl/release2/chrome/ach7dbbrq7aqylfkx3wmjrvd3vja_105.0.5195.127/" />
+      </urls>
+      <manifest version="105.0.5195.127">
+        <actions>
+          <action arguments="--verbose-logging --do-not-launch-chrome --channel=stable" event="update" run="105.0.5195.127_chrome_installer.exe" />
+          <action Version="105.0.5195.127" event="postinstall" onsuccess="exitsilentlyonlaunchcmd" />
+        </actions>
+        <packages>
+          <package fp="1.510d0fac36009e43f17643c9e4c9fd2a5b36b85f5de257edb00190235f957e2c" hash="On9Cs+C7cIPlOHTOUqLgnbZHArQ=" hash_sha256="510d0fac36009e43f17643c9e4c9fd2a5b36b85f5de257edb00190235f957e2c" name="105.0.5195.127_chrome_installer.exe" required="true" size="89700400" />
+        </packages>
+      </manifest>
+    </updatecheck>
+  </app>
+</response>
