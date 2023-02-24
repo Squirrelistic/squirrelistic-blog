@@ -39,14 +39,12 @@ $sessionId = ([String][Guid]::NewGuid()).ToUpper()
 $xmlWin64 = @"
 <?xml version="1.0" encoding="UTF-8"?>
 <request protocol="3.0" updater="Omaha" updaterversion="1.3.36.111" shell_version="1.3.36.111"
-    ismachine="1" sessionid="{$sessionId}"
-    installsource="update3web-ondemand" requestid="{$requestId}"
-    dedup="cr" domainjoined="0">
+    ismachine="1" sessionid="{$sessionId}" installsource="update3web-ondemand"
+    requestid="{$requestId}" dedup="cr" domainjoined="0">
     <hw physmemory="4" sse="1" sse2="1" sse3="1" ssse3="1" sse41="1" sse42="1" avx="1" />
     <os platform="win" version="10.0" sp="" arch="x64" />
     <app appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" version="5.0.375" nextversion=""
-        ap="x64-stable-statsdef_0" lang="" brand="GCEB" client="" installage="0"
-        iid="{31FDF25B-CC90-55E2-E8A6-6947A311CC60}">
+        ap="x64-stable-statsdef_0" lang="" brand="GCEB" client="" installage="0">
         <updatecheck targetversionprefix="$ChromeVersion.0"/>
     </app>
 </request>
@@ -60,14 +58,12 @@ $sessionId = ([String][Guid]::NewGuid()).ToUpper()
 $xmlWin32 = @"
 <?xml version="1.0" encoding="UTF-8"?>
 <request protocol="3.0" updater="Omaha" updaterversion="1.3.36.111" shell_version="1.3.36.111"
-    ismachine="1" sessionid="{$sessionId}"
-    installsource="update3web-ondemand" requestid="{$requestId}"
-    dedup="cr" domainjoined="0">
+    ismachine="1" sessionid="{$sessionId}" installsource="update3web-ondemand"
+    requestid="{$requestId}" dedup="cr" domainjoined="0">
     <hw physmemory="4" sse="1" sse2="1" sse3="1" ssse3="1" sse41="1" sse42="1" avx="1" />
     <os platform="win" version="10.0" sp="" arch="x86" />
     <app appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" version="5.0.375" nextversion=""
-        ap="x86-stable-statsdef_0" lang="" brand="GCEB" client="" installage="0"
-        iid="{31FDF25B-CC90-55E2-E8A6-6947A311CC60}">
+        ap="x86-stable-statsdef_0" lang="" brand="GCEB" client="" installage="0">
         <updatecheck targetversionprefix="$ChromeVersion.0"/>
     </app>
 </request>
