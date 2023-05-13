@@ -1,0 +1,4 @@
+librosa==0.10.0
+PyAudio==0.2.12
+PyAudioWPatch==0.2.12.5
+numpy==1.24.3

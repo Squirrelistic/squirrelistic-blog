@@ -40,5 +40,5 @@ void PrintPrimes(int howMany, Func<int, IEnumerable<int>> natsFunc)
 // uses recursive natural numbers generator
 PrintPrimes(howMany: 10, Nats);
 
-// does not use recursion for Nats, calculates at least 4000 primes
-PrintPrimes(howMany: 10000, natsFunc: NatsWithoutRecursion);
+// does not use recursion for Nats, calculates at least 7054 primes
+PrintPrimes(howMany: 50000, natsFunc: NatsWithoutRecursion);
