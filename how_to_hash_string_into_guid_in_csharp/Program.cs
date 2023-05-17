@@ -2,3 +2,4 @@
 
 Console.WriteLine("Hash the string and convert into Guid".ToGuid());
 Console.WriteLine("🐿🐇".ToGuid());
+Console.WriteLine("Hello World!".ToGuid());
