@@ -1,0 +1,47 @@
+name: Build and Push MSSQL Server Windows Docker Image
+
+on:
+  workflow_dispatch:
+    inputs:
+     sql_version:
+        description: 'SQL Server Version'
+        required: true
+        default: '2022'
+        type: choice
+        options:
+        - '2022'
+        - '2019'
+
+     win_version:
+        description: 'Windows Version'
+        required: true
+        default: ltsc2022
+        type: choice
+        options:
+        - ltsc2022
+        - ltsc2019
+
+jobs:
+  build_and_deploy:
+    runs-on: windows-2022
+    name: Build and Publish
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 'Docker Login'
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Docker Build and Push
+        run: |
+          if (-not $env:SQL_VERSION) { $env:SQL_VERSION = '2022' }
+          if (-not $env:WIN_VERSION) { $env:WIN_VERSION = 'ltsc2022' }
+          docker build --build-arg SQL_VERSION=$env:SQL_VERSION --build-arg WIN_VERSION=$env:WIN_VERSION -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/mssqlserver:$env:SQL_VERSION-$env:WIN_VERSION .\how_to_run_mssqlserver_in_windows_container
+          docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/mssqlserver:$env:SQL_VERSION-$env:WIN_VERSION
+        env:
+          SQL_VERSION: ${{ inputs.sql_version }}
+          WIN_VERSION: ${{ inputs.win_version }}
