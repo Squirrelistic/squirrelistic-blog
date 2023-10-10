@@ -15,15 +15,15 @@ on:
      win_version:
         description: 'Windows Version'
         required: true
-        default: ltsc2022
+        default: '2022'
         type: choice
         options:
-        - ltsc2022
-        - ltsc2019
+        - '2022'
+        - '2019'
 
 jobs:
   build_and_deploy:
-    runs-on: windows-2022
+    runs-on: windows-${{ inputs.win_version }}
     name: Build and Publish
     steps:
       - name: Checkout
@@ -44,4 +44,4 @@ jobs:
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/mssqlserver:$env:SQL_VERSION-$env:WIN_VERSION
         env:
           SQL_VERSION: ${{ inputs.sql_version }}
-          WIN_VERSION: ${{ inputs.win_version }}
+          WIN_VERSION: ltsc${{ inputs.win_version }}
