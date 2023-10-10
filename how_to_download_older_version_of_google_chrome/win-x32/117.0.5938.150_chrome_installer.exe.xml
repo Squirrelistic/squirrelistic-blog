@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response protocol="3.0" server="prod">
+  <daystart elapsed_days="6126" elapsed_seconds="9679" />
+  <app appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" cohort="1:gu/i19:" cohortname="Stable Installs &amp; Version Pins" status="ok">
+    <updatecheck status="ok">
+      <urls>
+        <url codebase="http://edgedl.me.gvt1.com/edgedl/release2/chrome/c62pdouypxoho7ltrcomhf476m_117.0.5938.150/" />
+        <url codebase="https://edgedl.me.gvt1.com/edgedl/release2/chrome/c62pdouypxoho7ltrcomhf476m_117.0.5938.150/" />
+        <url codebase="http://dl.google.com/release2/chrome/c62pdouypxoho7ltrcomhf476m_117.0.5938.150/" />
+        <url codebase="https://dl.google.com/release2/chrome/c62pdouypxoho7ltrcomhf476m_117.0.5938.150/" />
+        <url codebase="http://www.google.com/dl/release2/chrome/c62pdouypxoho7ltrcomhf476m_117.0.5938.150/" />
+        <url codebase="https://www.google.com/dl/release2/chrome/c62pdouypxoho7ltrcomhf476m_117.0.5938.150/" />
+      </urls>
+      <manifest version="117.0.5938.150">
+        <actions>
+          <action arguments="--verbose-logging --do-not-launch-chrome --channel=stable" event="update" run="117.0.5938.150_chrome_installer.exe" />
+          <action Version="117.0.5938.150" event="postinstall" onsuccess="exitsilentlyonlaunchcmd" />
+        </actions>
+        <packages>
+          <package fp="1.94ac79cb3cd08673cff6fc02b5a49662ff4f308fff61e75c540649bd02805958" hash="CgIh/5fiIEW7JWwHvPtxHUirU8c=" hash_sha256="94ac79cb3cd08673cff6fc02b5a49662ff4f308fff61e75c540649bd02805958" name="117.0.5938.150_chrome_installer.exe" required="true" size="100288560" />
+        </packages>
+      </manifest>
+    </updatecheck>
+  </app>
+</response>
