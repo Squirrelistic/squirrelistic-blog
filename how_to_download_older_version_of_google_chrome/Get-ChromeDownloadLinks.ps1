@@ -2,7 +2,7 @@
 param
 (
     [Parameter(ValueFromPipeline = $true, HelpMessage = 'Chrome Version (Mac >= 94, Win >= 97)')]
-    [int]$ChromeVersion = '100'
+    [String]$ChromeVersion = '100'
 )
 
 Set-StrictMode -Version Latest
@@ -45,7 +45,7 @@ $xmlWin64 = @"
     <os platform="win" version="10.0" sp="" arch="x64" />
     <app appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" version="5.0.375" nextversion=""
         ap="x64-stable-statsdef_0" lang="" brand="GCEB" client="" installage="0">
-        <updatecheck targetversionprefix="$ChromeVersion.0"/>
+        <updatecheck targetversionprefix="$ChromeVersion"/>
     </app>
 </request>
 "@
@@ -64,7 +64,7 @@ $xmlWin32 = @"
     <os platform="win" version="10.0" sp="" arch="x86" />
     <app appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" version="5.0.375" nextversion=""
         ap="x86-stable-statsdef_0" lang="" brand="GCEB" client="" installage="0">
-        <updatecheck targetversionprefix="$ChromeVersion.0"/>
+        <updatecheck targetversionprefix="$ChromeVersion"/>
     </app>
 </request>
 "@
@@ -82,7 +82,7 @@ $xmlMacSilicon = @"
     <os platform="mac" version="13.1" arch="arm64e" sp="13.1.0_arm64e"></os>
     <app appid="com.google.Chrome" version="5.0.375" cohort="1:1y5:" cohortname="Stable"
         lang="en-us" installage="75" ap="universal" brand="GGRO" signed="1">
-        <updatecheck targetversionprefix="$ChromeVersion.0"></updatecheck>
+        <updatecheck targetversionprefix="$ChromeVersion"></updatecheck>
     </app>
 </request>
 "@
@@ -100,7 +100,7 @@ $xmlMacIntel = @"
     <os platform="mac" version="13.2" arch="x86_64h" sp="13.2.1_x86_64h"></os>
     <app appid="com.google.Chrome" version="5.0.375" cohort="1:1y5:" cohortname="Stable"
         lang="en-us" installage="1166" ap="universal" brand="GGLG" signed="1">
-        <updatecheck targetversionprefix="$ChromeVersion.0"></updatecheck>
+        <updatecheck targetversionprefix="$ChromeVersion"></updatecheck>
     </app>
 </request>
 "@
