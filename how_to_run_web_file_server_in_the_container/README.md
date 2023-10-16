@@ -30,6 +30,10 @@ Method 2: Run the following, in the **Linux** command line (volume path for rela
 docker run --rm -it -p 8080:80 -v ./nginx-file-server/nginx.conf:/etc/nginx/nginx.conf:ro -v ./nginx-file-server/html:/etc/nginx/html nginx
 ```
 
+## How do I use it?
+
+Web server is available at http://localhost:8080 and http://[your-server-ip]:8080 addresses.
+
 ## Possible issues
 
 Pay attention to the encodings of text files (txt, html, etc.).
