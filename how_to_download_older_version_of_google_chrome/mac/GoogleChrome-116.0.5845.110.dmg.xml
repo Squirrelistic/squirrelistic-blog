@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response protocol="3.0" server="prod">
+  <daystart elapsed_days="6157" elapsed_seconds="14286" />
+  <app appid="com.google.Chrome" cohort="1:1y5/23r:" cohortname="Stable Installs &amp; Version Pins" status="ok">
+    <updatecheck status="ok">
+      <urls>
+        <url codebase="http://edgedl.me.gvt1.com/edgedl/release2/chrome/lc2nnbd7ety2j2us2adcg5glhq_116.0.5845.110/" />
+        <url codebase="https://edgedl.me.gvt1.com/edgedl/release2/chrome/lc2nnbd7ety2j2us2adcg5glhq_116.0.5845.110/" />
+        <url codebase="http://dl.google.com/release2/chrome/lc2nnbd7ety2j2us2adcg5glhq_116.0.5845.110/" />
+        <url codebase="https://dl.google.com/release2/chrome/lc2nnbd7ety2j2us2adcg5glhq_116.0.5845.110/" />
+        <url codebase="http://www.google.com/dl/release2/chrome/lc2nnbd7ety2j2us2adcg5glhq_116.0.5845.110/" />
+        <url codebase="https://www.google.com/dl/release2/chrome/lc2nnbd7ety2j2us2adcg5glhq_116.0.5845.110/" />
+      </urls>
+      <manifest version="116.0.5845.110">
+        <actions>
+          <action event="update" run="GoogleChrome-116.0.5845.110.dmg" />
+          <action DisplayVersion="116.0.5845.110" event="postinstall" />
+        </actions>
+        <packages>
+          <package fp="1.ca42eb8df083ffe998f8f38bba7a9f8957ae6ada78a047eeda540db235920585" hash="tjpoQra5fuo6L+mtk10dZn+tPbo=" hash_sha256="ca42eb8df083ffe998f8f38bba7a9f8957ae6ada78a047eeda540db235920585" name="GoogleChrome-116.0.5845.110.dmg" required="true" size="227748989" />
+        </packages>
+      </manifest>
+    </updatecheck>
+  </app>
+</response>

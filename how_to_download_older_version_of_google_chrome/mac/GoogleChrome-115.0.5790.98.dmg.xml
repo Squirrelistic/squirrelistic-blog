@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response protocol="3.0" server="prod">
+  <daystart elapsed_days="6157" elapsed_seconds="14497" />
+  <app appid="com.google.Chrome" cohort="1:1y5/23r:" cohortname="Stable Installs &amp; Version Pins" status="ok">
+    <updatecheck status="ok">
+      <urls>
+        <url codebase="http://edgedl.me.gvt1.com/edgedl/release2/chrome/ace6t3olu4g2fls2n4pow7ij2kzq_115.0.5790.98/" />
+        <url codebase="https://edgedl.me.gvt1.com/edgedl/release2/chrome/ace6t3olu4g2fls2n4pow7ij2kzq_115.0.5790.98/" />
+        <url codebase="http://dl.google.com/release2/chrome/ace6t3olu4g2fls2n4pow7ij2kzq_115.0.5790.98/" />
+        <url codebase="https://dl.google.com/release2/chrome/ace6t3olu4g2fls2n4pow7ij2kzq_115.0.5790.98/" />
+        <url codebase="http://www.google.com/dl/release2/chrome/ace6t3olu4g2fls2n4pow7ij2kzq_115.0.5790.98/" />
+        <url codebase="https://www.google.com/dl/release2/chrome/ace6t3olu4g2fls2n4pow7ij2kzq_115.0.5790.98/" />
+      </urls>
+      <manifest version="115.0.5790.98">
+        <actions>
+          <action event="update" run="GoogleChrome-115.0.5790.98.dmg" />
+          <action DisplayVersion="115.0.5790.98" event="postinstall" />
+        </actions>
+        <packages>
+          <package fp="1.20f4a44aa5cc6ed17e84a992ff448cbc610cd2c49f991e414a7ee63fed1dbf0d" hash="S0Pp+MELONv4b0Jvlrr6m/iaPZw=" hash_sha256="20f4a44aa5cc6ed17e84a992ff448cbc610cd2c49f991e414a7ee63fed1dbf0d" name="GoogleChrome-115.0.5790.98.dmg" required="true" size="224974250" />
+        </packages>
+      </manifest>
+    </updatecheck>
+  </app>
+</response>
