@@ -8,6 +8,14 @@ param
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
+$returnedResult = New-Object PSObject -Property @{
+    'Win x64' = @()
+    'Win x32' = @()
+    'Mac Silicon' = @()
+    'Mac Intel' = @()
+}
+
+
 function Get-DownloadLinks($Platform, $Xml) {
     $webRequest = @{
         Method    = 'Post'
@@ -25,11 +33,12 @@ function Get-DownloadLinks($Platform, $Xml) {
     if ($status -eq 'ok') {
         $package = $contentXml.response.app.updatecheck.manifest.packages.package
         $urls = $contentXml.response.app.updatecheck.urls.url | ForEach-Object { $_.codebase + $package.name }
-        Write-Output "--- Chrome $platform found. Hash=$($package.hash) Hash_sha256=$($package.hash_sha256)). ---"
-        Write-Output $urls
+        Write-Host "--- Chrome $platform found. Hash=$($package.hash) Hash_sha256=$($package.hash_sha256)). ---"
+        Write-Host $urls
+		$returnedResult.$platform = $urls
     }
     else {
-        Write-Output "Chrome not found (status: $status)"
+        Write-Host "Chrome not found (status: $status)"
     }
 }
 
@@ -106,3 +115,5 @@ $xmlMacIntel = @"
 "@
 
 Get-DownloadLinks -Platform 'Mac Intel' -Xml $xmlMacIntel
+
+Return $returnedResult
