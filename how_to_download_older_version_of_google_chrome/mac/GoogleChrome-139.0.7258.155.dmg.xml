@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<response protocol="3.0" server="prod">
+  <daystart elapsed_days="6822" elapsed_seconds="27184" />
+  <app appid="com.google.Chrome" cohort="1:1y5/23r:" cohortname="Stable Installs &amp; Version Pins" status="ok">
+    <updatecheck status="ok">
+      <urls>
+        <url codebase="http://edgedl.me.gvt1.com/edgedl/release2/chrome/gzhmrqghx4b6bwhn7ck3vb2h5y_139.0.7258.155/" />
+        <url codebase="https://edgedl.me.gvt1.com/edgedl/release2/chrome/gzhmrqghx4b6bwhn7ck3vb2h5y_139.0.7258.155/" />
+        <url codebase="http://dl.google.com/release2/chrome/gzhmrqghx4b6bwhn7ck3vb2h5y_139.0.7258.155/" />
+        <url codebase="https://dl.google.com/release2/chrome/gzhmrqghx4b6bwhn7ck3vb2h5y_139.0.7258.155/" />
+        <url codebase="http://www.google.com/dl/release2/chrome/gzhmrqghx4b6bwhn7ck3vb2h5y_139.0.7258.155/" />
+        <url codebase="https://www.google.com/dl/release2/chrome/gzhmrqghx4b6bwhn7ck3vb2h5y_139.0.7258.155/" />
+      </urls>
+      <manifest version="139.0.7258.155">
+        <actions>
+          <action event="update" run="GoogleChrome-139.0.7258.155.dmg" />
+          <action DisplayVersion="139.0.7258.155" event="postinstall" />
+        </actions>
+        <packages>
+          <package fp="1.93c91b48b0fb2b802eb9994f61abe31322fee026f1de07980a084b7da7f9a361" hash="uKvboMzVW4klIkOyL36CpbMRxds=" hash_sha256="93c91b48b0fb2b802eb9994f61abe31322fee026f1de07980a084b7da7f9a361" name="GoogleChrome-139.0.7258.155.dmg" required="true" size="229019712" />
+        </packages>
+      </manifest>
+    </updatecheck>
+  </app>
+</response>
